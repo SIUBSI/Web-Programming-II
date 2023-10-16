@@ -1,6 +1,6 @@
-## Materi Pertemuan 3 pada matakuliah Web Programming II
+# Materi Pertemuan 3 pada matakuliah Web Programming II
 
-Berikut daftar perubahan dari **pertemuan 2** ke **pertemuan 3** :
+## Berikut daftar perubahan dari **pertemuan 2** ke **pertemuan 3** :
 
 - **Contoh 1** : Menambahkan file `Latihan1.php` pada `application/controllers`
 Untuk Contoh 1 dapat anda akses disini [http://localhost/Webprog-II/P03/pustaka-booking/Latihan1](http://localhost/Webprog-II/P03/pustaka-booking/Latihan1)
@@ -19,9 +19,9 @@ Membuat file `Matakuliah.php` pada `application/controllers`.
 Membuat file `view-data-matakuliah.php` pada `application/views`.
 Akses file dengan membuka url [http://localhost/Webprog-II/P03/pustaka-booking/matakuliah](http://localhost/Webprog-II/P03/pustaka-booking/matakuliah)
 
-### Tahap Konfigurasi
+## Tahap Konfigurasi
 
-- Menghilangkan file `index.php` pada `application/config/config.php`
+- Menghilangkan `index.php` pada **index_page** di `application/config/config.php`
 
 sebelum diubah :
 ```php
@@ -44,14 +44,14 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L]
 ```
 
-Setelah melakukan konfigurasi, sekarang anda dapat mengakses file tanpa menggunakan **index.php** seperti **`localhost/Webprog-II/P03/pustaka-booking/Latihan1/penjumlahan/2/6`**
+Setelah melakukan konfigurasi, sekarang anda dapat mengakses file tanpa menggunakan **index.php** seperti [http://localhost/Webprog-II/P03/pustaka-booking/Latihan1/penjumlahan/2/6](http://localhost/Webprog-II/P03/pustaka-booking/Latihan1/penjumlahan/2/6)
 
-### Daftar Kendala
+## Daftar Kendala
 
 Kendala ketika mengakses url pada **Contoh 4**
 ![Kendala1](image.png)
 
-**Cara penyelesaian** : 
+**Cara penyelesaian** : <br>
 Buka file `autoload.php` pada `application/config` kemudian cari kode 
 ```php
 $autoload['helper'] = array();
