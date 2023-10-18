@@ -11,7 +11,7 @@ Ubah menjadi
 ```php
 $autoload['libraries'] = array('form_validation', 'session', 'database');
 ```
-- Merancang & Membuat database [Unduh file sql disini]()
+- Merancang & Membuat database [Unduh file sql disini](https://github.com/SIUBSI/Web-Programming-II/blob/main/pustaka-booking/P06/pustaka.sql)
 - Membuat koneksi database CI dengan MySQL
 Kunjungi file `database.php` pada `application/config` dan cari sintaks berikut
 ```php
