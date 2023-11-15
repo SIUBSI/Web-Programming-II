@@ -74,4 +74,13 @@ class Autentifikasi extends CI_Controller
             redirect('autentifikasi');
         }
     }
+
+    public function registrasi()
+    {
+        $data['judul'] = 'Registrasi Member';
+        $this->load->view('templates/aute_header', $data);
+        $this->load->view('autentifikasi/registrasi');
+        $this->load->view('templates/aute_footer');
+    }
+
 }

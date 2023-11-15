@@ -17,6 +17,7 @@
     * sidebar.php
 3. autentifikasi
     * login.php
+    * registrasi.php
 
 `Controllers` :
 1. Admin.php

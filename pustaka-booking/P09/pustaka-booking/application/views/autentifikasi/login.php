@@ -9,38 +9,22 @@
                         <div class="col-lg">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb4">Welcome Back!</h1>
+                                    <h1 class="h4 text-gray-900 mb4">Halaman Login</h1>
                                 </div>
                                 <form class="user">
                                     <div class="form-group">
-                                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                                        <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukkan Email...">
                                     </div>
                                     <div class="form-group">
-                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Enter Password...">
-                                    </div>
-                                    <div class="form-group">
-                                        <div class="custom-control custom-checkboxsmall">
-                                            <input type="checkbox" class="custom-control-input" id="customCheck">
-                                            <label class="custom-control-label" for="customCheck">Remember Me</label>
-                                        </div>
+                                        <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Masukkan Password...">
                                     </div>
                                     <a href="index.html" class="btn btn-primary btn-user btn-block">
                                         Login
                                     </a>
                                     <hr>
-                                    <a href="index.html" class="btn btn-google btn-user btn-block">
-                                        <i class="fab fa-google fa-fw"></i> Login with Google
-                                    </a>
-                                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
-                                        <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
-                                    </a>
                                 </form>
-                                <hr>
                                 <div class="text-center">
-                                    <a class="small" href="forgotpassword.html">Forgot Password?</a>
-                                </div>
-                                <div class="text-center">
-                                    <a class="small" href="register.html">Create an Account!</a>
+                                    <a class="small" href="<?= base_url('autentifikasi/registrasi'); ?>">Daftar Menjadi Member!</a>
                                 </div>
                             </div>
                         </div>
