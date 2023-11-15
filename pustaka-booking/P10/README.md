@@ -1,23 +1,20 @@
-# Materi Pertemuan 9 pada matakuliah Web Programming II
+# Materi Pertemuan 10 pada matakuliah Web Programming II
 
-## Berikut daftar pembahasan di **pertemuan 9** :
+## Berikut daftar pembahasan di **pertemuan 10** :
 
-- Membuat tampilan Login
+- Membuat Form Registrasi User
 
 `Views` : 
-1. admin
+1. autentifikasi
     * login.php
-2. templates
-    * aute_header.php
-    * aute_footer.php
-    * header.php
+    * blok.php
+    * gagal.php
+2. user
     * index.php
-    * footer.php
-    * topbar.php
-    * sidebar.php
-3. autentifikasi
-    * login.php
+    * ubah-profile.php
 
 `Controllers` :
-1. Admin.php
-2. Autentifikasi.php
+1. User.php
+
+`Helpers` :
+1. pustaka_helper.php
