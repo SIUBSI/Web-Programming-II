@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2023 at 02:54 AM
+-- Generation Time: Nov 17, 2023 at 04:51 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 7.3.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `quiz`
+-- Database: `quiz_1`
 --
 
 -- --------------------------------------------------------

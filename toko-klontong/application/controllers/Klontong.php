@@ -10,7 +10,7 @@ class Klontong extends CI_Controller
 
     public function index()
     {
-        $data['produk'] = $this->db->get('produk')->result_array();
+        $data['produk'] = $this->ModelProduk->getProduk('produk')->result_array();
 
         $this->load->view('produk', $data);
     }
