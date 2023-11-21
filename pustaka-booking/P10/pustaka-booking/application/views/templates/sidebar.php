@@ -25,6 +25,9 @@
                         </li>
                     </li>
 
+                <!-- Divider -->
+                <hr class="sidebar-divider mt-3">
+
                 <!-- Heading -->
                 <div class="sidebar-heading">
                     Master Data
@@ -33,7 +36,7 @@
                     <li class="nav-item active">
                         <!-- Nav Item - Dashboard -->
                         <li class="nav-item">
-                            <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
+                            <a class="nav-link pb-0" href="<?= base_url('user'); ?>">
                                 <i class="fa fa-fw fa-book"></i>
                                 <span>Data Anggota</span></a>
                         </li>
