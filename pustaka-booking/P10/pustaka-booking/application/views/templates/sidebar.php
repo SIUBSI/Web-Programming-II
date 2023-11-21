@@ -13,6 +13,17 @@
             <hr class="sidebar-divider">
 
             <!-- Looping Menu-->
+                <div class="sidebar-heading">
+                    Home
+                </div>
+                    <li class="nav-item active">
+                        <!-- Nav Item - Dashboard -->
+                        <li class="nav-item">
+                            <a class="nav-link pb-0" href="<?= base_url('admin'); ?>">
+                                <i class="fa fa-fw fa-book"></i>
+                                <span>Dashboard</span></a>
+                        </li>
+                    </li>
 
                 <!-- Heading -->
                 <div class="sidebar-heading">
