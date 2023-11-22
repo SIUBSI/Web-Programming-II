@@ -34,9 +34,6 @@
                             </button>
                         </form>
                         <hr>
-                        <div class="text-center">
-                            <a class="small" href="<?= base_url('autentifikasi/lupaPassword'); ?>">Lupa Password?</a>
-                        </div>
                         <div class="text-center">Sudah daftar akun?<a class="small" href="<?= base_url('autentifikasi'); ?>"> Login</a>
                         </div>
                     </div>
