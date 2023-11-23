@@ -1,20 +1,13 @@
-# Materi Pertemuan 10 pada matakuliah Web Programming II
+# Materi Pertemuan 11 pada matakuliah Web Programming II
 
-## Berikut daftar pembahasan di **pertemuan 10** :
+## Berikut daftar pembahasan di **pertemuan 11** :
 
-- Membuat Form Registrasi User
+- Membuat Tampil Data Kategori
 
 `Views` : 
-1. autentifikasi
-    * login.php
-    * blok.php
-    * gagal.php
-2. user
+1. buku
+    * kategori.php
     * index.php
-    * ubah-profile.php
 
 `Controllers` :
-1. User.php
-
-`Helpers` :
-1. pustaka_helper.php
+1. Buku.php
