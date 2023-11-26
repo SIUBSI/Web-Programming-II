@@ -9,7 +9,7 @@
             </div>
             <?php }?>
             <?= $this->session->flashdata('pesan'); ?>
-            <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#kategoriBaruModal"><i class="fas fa-file-alt"></i> Tambah Kategori</a>
+            <a href="" class="btn btn-primary mb-3" data-toggle="modal" data-target="#kategoriBaruModal"><i class="fas fa-file-alt"></i> Tambah Kategori Buku Baru</a>
             <table class="table table-hover">
                 <thead>
                     <tr>
@@ -39,12 +39,14 @@
 <!-- /.container-fluid -->
 </div>
 <!-- End of Main Content -->
+
+
 <!-- Modal Tambah kategori baru-->
 <div class="modal fade" id="kategoriBaruModal" tabindex="-1" role="dialog" aria-labelledby="kategoriBaruModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="kategoriBaruModalLabel">Tambah Kategori</h5>
+                <h5 class="modal-title" id="kategoriBaruModalLabel">Tambah Kategori Baru</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -52,7 +54,7 @@
             <form action="<?= base_url('buku/kategori'); ?>" method="post">
                 <div class="modal-body">
                     <div class="form-group">
-                        <select name="kategori" class="form-control form-control-user">
+                        <select name="nama_kategori" class="form-control form-control-user">
                             <option value="">Pilih Kategori</option>
                             <?php
                             $k = ['Sains','Hobby','Komputer','Komunikasi','Hukum','Agama','Populer','Bahasa','Komik'];

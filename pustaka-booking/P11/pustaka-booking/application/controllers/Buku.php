@@ -15,21 +15,51 @@ class Buku extends CI_Controller
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $data['kategori'] = $this->ModelBuku->getKategori()->result_array();
         $this->form_validation->set_rules(
-            'kategori', 
+            'nama_kategori',
             'Kategori',
-            'required', [
-                'required' => 'Kategori Buku tidak boleh kosong'
-        ]);
-        if ($this->form_validation->run() == false) 
-        {
+            'required',
+            [
+                'required' => 'Nama Kategori Buku harus diisi'
+            ]
+        );
+        if ($this->form_validation->run() == false) {
             $this->load->view('templates/header', $data);
             $this->load->view('templates/sidebar', $data);
             $this->load->view('templates/topbar', $data);
             $this->load->view('buku/kategori', $data);
             $this->load->view('templates/footer');
         } else {
-            $data = ['nama_kategori' => $this->input->post('kategori')];
+            $data = ['nama_kategori' => $this->input->post('nama_kategori')];
             $this->ModelBuku->simpanKategori($data);
+            redirect('buku/kategori');
+        }
+    }
+
+    public function ubahKategori()
+    {
+        $data['judul'] = 'Ubah Data Kategori';
+        $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
+        $data['kategori'] = $this->ModelBuku->kategoriWhere(['id_kategori' => $this->uri->segment(3)])->result_array();
+
+
+        $this->form_validation->set_rules('nama_kategori', 'Nama Kategori', 'required|min_length[3]', [
+            'required' => 'Nama Kategori harus diisi',
+            'min_length' => 'Nama Kategori terlalu pendek'
+        ]);
+
+        if ($this->form_validation->run() == false) {
+            $this->load->view('templates/header', $data);
+            $this->load->view('templates/sidebar', $data);
+            $this->load->view('templates/topbar', $data);
+            $this->load->view('buku/ubah_kategori', $data);
+            $this->load->view('templates/footer');
+        } else {
+
+            $data = [
+                'nama_kategori' => $this->input->post('nama_kategori', true)
+            ];
+
+            $this->ModelBuku->updateKategori(['id_kategori' => $this->input->post('id_kategori')], $data);
             redirect('buku/kategori');
         }
     }

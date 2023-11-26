@@ -7,7 +7,7 @@
 `Views` : 
 1. buku
     * kategori.php
-    * index.php
+    * ubah_kategori.php
 
 `Controllers` :
 1. Buku.php
