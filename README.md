@@ -1,7 +1,8 @@
 # Kumpulan Materi tiap pertemuan pada Matakuliah Web Programming II
 
-### [Unduh pustaka-booking terbaru](https://github.com/SIUBSI/Web-Programming-II/releases/tag/pustaka-booking_v1.0.0)
-### [Pre-release](https://github.com/SIUBSI/Web-Programming-II/releases/tag/pustaka-booking_v1.1.0)
+### [Unduh pustaka-booking terbaru](https://github.com/SIUBSI/Web-Programming-II/releases/tag/pustaka-booking_v1.1.0)
+- [Unduh .rar](https://github.com/SIUBSI/Web-Programming-II/releases/download/pustaka-booking_v1.1.0/pustaka-booking.rar)
+- [Unduh .zip](https://github.com/SIUBSI/Web-Programming-II/archive/refs/tags/pustaka-booking_v1.1.0.zip)
 
 * [**Kunjungi Materi Pertemuan 2**](https://github.com/SIUBSI/Web-Programming-II/tree/main/pustaka-booking/P02)
 * [**Kunjungi Materi Pertemuan 3**](https://github.com/SIUBSI/Web-Programming-II/tree/main/pustaka-booking/P03)
