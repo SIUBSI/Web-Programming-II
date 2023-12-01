@@ -8,7 +8,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-md font-weight-bold text-black text-uppercase mb-1">Jumlah User</div>
-                            <div class="h1 mb-0 font-weight-bold text-black"><?= $this->ModelUser->getUserWhere(['role_id' >= 1])->num_rows(); ?></div>
+                            <div class="h1 mb-0 font-weight-bold text-black"><?= $this->ModelUser->getUser()->num_rows(); ?></div>
                         </div>
                         <div class="col-auto">
                             <a href="<?= base_url('user/anggota'); ?>"><i class="fas fa-users fa-3x text-primary"></i></a>
